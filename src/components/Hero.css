@@ -1,0 +1,42 @@
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: var(--gutter);
+  padding: clamp(2rem, 6vw, 4rem) var(--gutter) 3rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.hero__name {
+  font-size: clamp(2.75rem, 7vw, 5.25rem);
+  font-stretch: 75%;
+  font-weight: 700;
+  line-height: 0.92;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  max-width: 6ch;
+  margin-bottom: 1.5rem;
+}
+
+.hero__statement {
+  font-size: clamp(1.125rem, 1.6vw, 1.375rem);
+  line-height: 1.4;
+  max-width: 28ch;
+  margin: 0 0 2rem;
+}
+
+.hero__facts {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.35rem 1rem;
+  margin: 0;
+}
+
+.hero__facts dd {
+  margin: 0;
+}
+
+@media (max-width: 52rem) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+}
