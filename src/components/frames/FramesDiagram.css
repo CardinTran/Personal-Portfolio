@@ -1,0 +1,83 @@
+.frames {
+  margin: 0;
+}
+
+.frames__canvas {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border: 1px solid var(--rule);
+  touch-action: none;
+  cursor: grab;
+}
+
+.frames__canvas[data-dragging] {
+  cursor: grabbing;
+}
+
+.frames__readout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid var(--rule);
+  border-top: 0;
+  font-variant-numeric: tabular-nums;
+}
+
+.frames__frame {
+  margin: 0;
+  padding: 0.75rem 1rem;
+}
+
+.frames__frame + .frames__frame {
+  border-left: 1px solid var(--rule);
+}
+
+.frames__frame b {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.frames__frame--virtual b {
+  color: var(--virtual);
+}
+
+.frames__frame--physical b,
+.frames__frame [data-outside] {
+  color: var(--physical);
+}
+
+.frames__controls {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.frames__controls label {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.frames__controls input {
+  width: 100%;
+  margin: 0;
+  min-height: 1.5rem;
+  accent-color: var(--virtual);
+}
+
+.frames figcaption {
+  margin-top: 0.75rem;
+  max-width: 60ch;
+}
+
+@media (max-width: 30rem) {
+  .frames__readout {
+    grid-template-columns: 1fr;
+  }
+
+  .frames__frame + .frames__frame {
+    border-left: 0;
+    border-top: 1px solid var(--rule);
+  }
+}
