@@ -20,9 +20,10 @@ Scripts defined in `package.json`:
 | `npm run lint`         | ESLint; warnings fail                                          |
 | `npm run format`       | Prettier formatting                                            |
 | `npm run format:check` | Prettier verification                                          |
-| `npm run check`        | Lint, formatting verification, and build                       |
+| `npm test`             | Vitest unit tests (run once)                                   |
+| `npm run check`        | Lint, formatting verification, tests, and build                |
 
-No automated behavior test suite exists yet. Introduce targeted tests when real interactions or nontrivial logic warrant them; add and document the scripts with that work. Typechecking and linting are not substitutes for behavior or accessibility tests. CI runs installation and `npm run check` on pushes/PRs; remote execution must be confirmed on GitHub after pushing.
+Tests are colocated as `*.test.ts` and cover nontrivial logic: diagram geometry and chronology integrity. Add targeted tests as new logic or interactions warrant them; use `npx vitest` for watch mode. Typechecking and linting are not substitutes for behavior or accessibility tests. CI runs installation and `npm run check` on pushes/PRs; remote execution must be confirmed on GitHub after pushing.
 
 ## Branches and commits
 

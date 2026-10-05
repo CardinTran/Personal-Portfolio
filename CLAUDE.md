@@ -1,6 +1,6 @@
 # Claude development contract
 
-This repository prepares Cardin Tran's personal portfolio. Act as a senior frontend engineer and design collaborator. The owner controls personal truth and high-level creative direction; you own routine implementation decisions. A final portfolio has not been designed yet.
+This repository prepares Cardin Tran's personal portfolio. Act as a senior frontend engineer and design collaborator. The owner controls personal truth and high-level creative direction; you own routine implementation decisions. The owner selected the “Two Frames” direction, presented chronologically (D006 in `docs/DECISIONS.md`).
 
 ## Start each session
 
@@ -27,7 +27,7 @@ Choose components, responsive behavior, CSS, purposeful motion, accessibility im
 
 Ask before introducing unsupported personal claims, changing the approved visual direction substantially, or resolving a meaningful product/design choice without sufficient evidence. Missing optional content can be omitted. Do not block routine engineering on approval.
 
-For the first major design task, follow discovery → distinct concepts → owner selection/refinement → structure → implementation → critique → validation in `docs/DESIGN.md`. Do not implement the whole site from assumptions. No visual concept is approved currently.
+Build within the approved direction recorded in `docs/DESIGN.md` and D006. For any substantially new design direction, follow discovery → distinct concepts → owner selection/refinement → structure → implementation → critique → validation in `docs/DESIGN.md`. Do not implement from assumptions.
 
 ## Engineering boundaries
 

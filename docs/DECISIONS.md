@@ -36,4 +36,10 @@ Runtime data includes the resume's visible email, LinkedIn, and GitHub addresses
 
 Status: selected by the owner on 2026-10-05 from the concepts in PR #3.
 
-The owner chose concept A, “Two Frames” (`docs/concepts/a-two-frames.html`), with two changes: present work chronologically rather than by topic, and let robotics and AI lead. Newest-first year groups satisfy both, since every 2026 entry is AI or robotics. The interactive frame diagram stays as the hero's illustration. Contact is limited to email, LinkedIn, and GitHub (D005 confirmed). Project visuals and repository links are labelled placeholders until supplied (CONTENT.md, OWNER-2026-10-05). Implementation details are in DESIGN.md, under “Approved direction”. Remove `docs/concepts/` once the implementation replaces it.
+The owner chose concept A, “Two Frames” (`docs/concepts/a-two-frames.html`), with two changes: present work chronologically rather than by topic, and let robotics and AI lead. Newest-first year groups satisfy both, since every 2026 entry is AI or robotics. The interactive frame diagram stays as the hero's illustration. Contact is limited to email, LinkedIn, and GitHub (D005 confirmed). Project visuals and repository links are labelled placeholders until supplied (CONTENT.md, OWNER-2026-10-05). Implementation details are in DESIGN.md, under “Approved direction”. The concept sketches were removed once implemented; they remain in PR #3 and git history.
+
+## D007 — Self-hosted fonts and Vitest
+
+Status: implemented with the Two Frames layout.
+
+The type system needs Archivo's width axis (condensed display) and IBM Plex Mono. Fontsource packages self-host them from the site's own origin: there is no third-party request at runtime, `font-display: swap` is used, and unicode-range subsets mean only the needed glyphs download. Vitest is the test runner, since it shares Vite's config and matches the MSW/RTL tooling on the resume if DOM tests are added later. It currently runs pure-logic tests in Node.
