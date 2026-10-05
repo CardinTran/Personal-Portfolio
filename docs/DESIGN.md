@@ -1,6 +1,14 @@
 # Design direction and review
 
-Status: no final direction, layout, palette, typography system, or project presentation has been approved. The minimal application screen is a development placeholder, not a design proposal. Software engineering, AI, and robotics are the owner's intended portfolio scope; factual descriptions still require approved content sources.
+Status: direction A, “Two Frames”, selected with a chronological structure (D006). The palette, type, and layout below are the approved direction; the minimal application screen remains a placeholder until implementation lands. Software engineering, AI, and robotics are the owner's intended portfolio scope; factual descriptions still require approved content sources.
+
+## Approved direction — D006
+
+- **Concept:** technical drawing / spec sheet. Off-white paper, near-black ink, and two signal colours carried from the diagram: blue for the virtual (Unity) frame and rust for the physical (robot) frame. Condensed Archivo for display type, IBM Plex Mono for metadata and annotation. No cards, gradients, or shadows; structure comes from rules, numbered labels, and a two-column grid.
+- **Hero:** name, a statement leading with robotics then AI, education (Expected May 2027), contact links, and the interactive two-frame diagram. The diagram is a labelled illustration, never project evidence.
+- **Work:** one reverse-chronological sequence grouped under year headings (2026, 2025, 2021), mixing experience, projects, and leadership. Within 2026, ongoing robotics and AI entries come first. The order inside a year does not assert start order, because “2026 – Present” has no month.
+- **Placeholders:** each project entry reserves a visibly labelled slot for a project visual and a repository link until the owner supplies them.
+- **Then:** tools and coursework, then contact.
 
 ## Principles
 

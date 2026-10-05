@@ -1,6 +1,6 @@
 # Design concepts (proposal)
 
-Status: **awaiting owner selection.** None of these is approved (see D004). The HTML files are throwaway sketches, each labelled as a proposal in the page itself. They show structure, type, and interaction, not finished design. They copy resume text by hand; the real build will render from `src/data/`. Delete this folder once a direction is chosen and recorded in `DECISIONS.md`.
+Status: **concept A selected, with chronological structure (D006).** None of these is approved (see D004). The HTML files are throwaway sketches, each labelled as a proposal in the page itself. They show structure, type, and interaction, not finished design. They copy resume text by hand; the real build will render from `src/data/`. Delete this folder once a direction is chosen and recorded in `DECISIONS.md`.
 
 View the sketches by opening the files in a browser, or serve them with `python3 -m http.server -d docs/concepts`. Screenshots are in `screenshots/`.
 

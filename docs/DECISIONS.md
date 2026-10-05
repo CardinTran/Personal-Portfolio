@@ -22,12 +22,18 @@ Use ESLint, Prettier, TypeScript, and production build via `npm run check`, with
 
 ## D004 — Final design deferred
 
-Status: awaiting owner selection.
+Status: superseded by D006.
 
 No palette, typography system, navigation model, project presentation model, or motion concept is approved. The initial shell is intentionally neutral. First design work should present distinct structural concepts based on approved content and available assets, followed by owner selection before major implementation. Record that choice here when made.
 
 ## D005 — Published contact details
 
-Status: implemented with structured content data; owner may revise.
+Status: implemented with structured content data; confirmed by the owner on 2026-10-05.
 
 Runtime data includes the resume's visible email, LinkedIn, and GitHub addresses as links. The phone number and home address (Harvey, LA 70058) remain in `CONTENT.md` but are not shipped in the client bundle, because anything imported is public and the owner has not chosen to publish them. Add them to `identity.ts` only on owner request.
+
+## D006 — Direction A, chronological
+
+Status: selected by the owner on 2026-10-05 from the concepts in PR #3.
+
+The owner chose concept A, “Two Frames” (`docs/concepts/a-two-frames.html`), with two changes: present work chronologically rather than by topic, and let robotics and AI lead. Newest-first year groups satisfy both, since every 2026 entry is AI or robotics. The interactive frame diagram stays as the hero's illustration. Contact is limited to email, LinkedIn, and GitHub (D005 confirmed). Project visuals and repository links are labelled placeholders until supplied (CONTENT.md, OWNER-2026-10-05). Implementation details are in DESIGN.md, under “Approved direction”. Remove `docs/concepts/` once the implementation replaces it.
