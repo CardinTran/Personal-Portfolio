@@ -7,7 +7,11 @@ The resume remains the ultimate authority if this document and the resume confli
 ## Source registry and provenance
 
 - **RESUME:** `docs/Sep18 Resume Mark1.pdf`, page 1, supplied by the owner in the initial repository commit `7550b7b`. Full text extracted and checked against a rendered page during setup. Whitespace and PDF glyph extraction artifacts are normalized below; wording and factual scope are preserved.
-- No additional biographical sources are approved. To add one, record its source ID, repository path, relevant passages/claim scope, owner approval reference/date, and relationship to the resume. Merely adding a file or discovering information online is not approval. Conflicts require owner resolution; an agent cannot silently override the resume.
+- **OWNER-2026-10-05:** owner decisions given in the development session of 2026-10-05, replying to the design-concept questions in PR #3. No repository file is the source; this entry is the record. Exact scope:
+  1. May 2027 may be labelled “Expected” (“It can be labelled expected”).
+  2. Publish the visible email, LinkedIn, and GitHub addresses; do not publish the phone number or home address.
+  3. The owner has project visuals and GitHub repositories that have not been supplied. Visibly labelled placeholders may hold their place. No repository URL, project mapping, or visual content is approved by this entry.
+- No other additional biographical sources are approved. To add one, record its source ID, repository path, relevant passages/claim scope, owner approval reference/date, and relationship to the resume. Merely adding a file or discovering information online is not approval. Conflicts require owner resolution; an agent cannot silently override the resume.
 - Each `RESUME-*` ID below denotes the corresponding page-1 section or entry. Application records cite these IDs, with bullet numbers if useful.
 
 The filename does not establish a resume year or freshness date. “Present” is retained exactly as source wording, not independently verified current status. Education date wording is retained without asserting a completed degree. Skills listed generally are not evidence that a specific project used them. Do not infer proficiency levels beyond the explicit spoken-language labels.
@@ -34,7 +38,7 @@ No standalone tagline or professional summary appears in the resume. Select posi
 - Degree/minor as written: Bachelor of Science in Computer Science, Minor in Robotics Engineering
 - GPA: 3.842
 
-The resume does not explicitly label May 2027 as “expected” or “graduated.” Preserve its wording or request clarification when a status label is required.
+The resume does not explicitly label May 2027 as “expected” or “graduated.” The owner approved “Expected May 2027” (OWNER-2026-10-05, item 1). Never present it as a completed degree.
 
 ### Relevant coursework — RESUME-COURSEWORK
 
