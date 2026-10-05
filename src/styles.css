@@ -1,0 +1,22 @@
+/* Neutral development shell; this is not the portfolio's visual direction. */
+:root {
+  font-family: system-ui, sans-serif;
+  color: #202020;
+  background: #fff;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  max-width: 42rem;
+  margin-inline: auto;
+  padding: 2rem 1.25rem;
+}
+
+h1 {
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
