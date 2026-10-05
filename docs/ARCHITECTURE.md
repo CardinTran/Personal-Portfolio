@@ -8,14 +8,14 @@ Initially the repository contained one resume PDF, a clean `main` branch, one co
 
 - React with strict TypeScript for understandable typed components; Vite for local development and static production bundling. npm plus the committed lockfile manages dependencies.
 - Plain CSS in `src/styles.css` for now. Introduce colocated CSS modules when component scope warrants them. No utility framework or component library is needed to establish the environment.
-- `src/main.tsx` mounts `App.tsx`; `App.tsx` renders a neutral preparation screen using the sourced name in `src/data/identity.ts`.
+- `src/main.tsx` mounts `App.tsx`; `App.tsx` currently renders a neutral preparation screen using the sourced name in `src/data/identity.ts`.
 - No router, backend, database, global state provider, animation library, or external font is installed. This shell is one page. Future navigation and project-detail routing remain open design/product decisions; add routing only if actual needs justify it.
 
 ## Content architecture
 
 The source chain is resume → verified `docs/CONTENT.md` ledger → provenance-tagged `src/data/` records → rendering components. The resume overrides extraction conflicts. Future owner-approved sources are registered with path, scope, and approval evidence before use.
 
-Only identity data is instantiated now. Add experience/project/education/skill/link data when implementing those sections, with source IDs per record and optional fields omitted when unknown. Keep factual values centralized, distinguish source wording from presentation copy, and avoid maintaining duplicate claim sets across UI components. TypeScript does not establish factual truth; review every rewrite manually.
+All resume sections are instantiated as typed, provenance-tagged records in `src/data/` (see its README); resume bullets are stored verbatim and optional fields are omitted when unknown. Keep factual values centralized, distinguish source wording from presentation copy, and avoid maintaining duplicate claim sets across UI components. TypeScript does not establish factual truth; review every rewrite manually.
 
 ## Organization and assets
 

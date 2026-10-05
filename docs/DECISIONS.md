@@ -25,3 +25,9 @@ Use ESLint, Prettier, TypeScript, and production build via `npm run check`, with
 Status: awaiting owner selection.
 
 No palette, typography system, navigation model, project presentation model, or motion concept is approved. The initial shell is intentionally neutral. First design work should present distinct structural concepts based on approved content and available assets, followed by owner selection before major implementation. Record that choice here when made.
+
+## D005 — Published contact details
+
+Status: implemented with structured content data; owner may revise.
+
+Runtime data includes the resume's visible email, LinkedIn, and GitHub addresses as links. The phone number and home address (Harvey, LA 70058) remain in `CONTENT.md` but are not shipped in the client bundle, because anything imported is public and the owner has not chosen to publish them. Add them to `identity.ts` only on owner request.

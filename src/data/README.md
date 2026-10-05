@@ -1,6 +1,17 @@
 # Approved application content
 
-`identity.ts` is the only runtime content record so far. Its source ID points to `docs/CONTENT.md` and the resume header. Expand data files as sections are implemented, rather than prebuilding empty schemas.
+Every resume section is instantiated as typed records because every candidate design presents the same facts:
+
+| File            | Records                                        | Source IDs                                                  |
+| --------------- | ---------------------------------------------- | ----------------------------------------------------------- |
+| `identity.ts`   | Name and published contact links               | `RESUME-IDENTITY`                                           |
+| `education.ts`  | Degree, minor, date, GPA; coursework           | `RESUME-EDUCATION`, `RESUME-COURSEWORK`                     |
+| `experience.ts` | Experience entries; leadership                 | `RESUME-MIKEGPT`, `RESUME-TIGERRACING`, `RESUME-LEADERSHIP` |
+| `projects.ts`   | Projects and research, in resume order         | `RESUME-SAFETY`, `RESUME-WANDERER`, `RESUME-VIRTUAL-TWIN`   |
+| `skills.ts`     | Skill groups as printed                        | `RESUME-SKILLS`                                             |
+| `types.ts`      | `SourceId`, `Entry`, and `Period` shared types | —                                                           |
+
+`highlights` hold resume bullets verbatim. Dates are stored exactly as printed (`'Jan. 2026'`, `'Present'`), never parsed into date objects. Phone and home address are deliberately absent (D005). Do not add empty schemas for content the resume does not supply.
 
 Keep factual values and their provenance here, separate from presentation. Use stable source IDs from `docs/CONTENT.md` per record; add finer passage/bullet references when a record combines claims. Fields may be omitted when unknown. Keep source wording and presentation copy distinguishable when rewriting. Never treat a record's TypeScript validity as proof of truth.
 
