@@ -1,0 +1,74 @@
+.year + .year {
+  margin-top: 4rem;
+}
+
+.year__heading {
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-stretch: 75%;
+  font-weight: 700;
+  line-height: 0.85;
+  font-variant-numeric: tabular-nums;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--ink);
+}
+
+.entry {
+  display: grid;
+  grid-template-columns: minmax(0, 4fr) minmax(0, 6fr);
+  gap: 1.5rem var(--gutter);
+  padding-block: 2.5rem;
+  border-bottom: 1px dashed var(--rule);
+  scroll-margin-top: 1rem;
+}
+
+.entry:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.entry__meta p {
+  margin: 0 0 0.25rem;
+}
+
+.entry__kind {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.entry__name {
+  font-size: clamp(1.5rem, 2.4vw, 1.875rem);
+  font-stretch: 85%;
+  font-weight: 650;
+  margin: 0.25rem 0 0.75rem;
+}
+
+.entry__meta .entry__stack,
+.entry__meta .placeholder-note {
+  margin-top: 1rem;
+}
+
+.entry__body li + li {
+  margin-top: 0.65rem;
+}
+
+/* Placeholders stay visibly provisional: dashed, labelled, never image-like. */
+.placeholder-note {
+  color: var(--physical);
+}
+
+.placeholder-visual {
+  display: grid;
+  place-items: center;
+  min-height: 5.5rem;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border: 1px dashed var(--muted);
+  color: var(--muted);
+  text-align: center;
+}
+
+@media (max-width: 52rem) {
+  .entry {
+    grid-template-columns: 1fr;
+  }
+}

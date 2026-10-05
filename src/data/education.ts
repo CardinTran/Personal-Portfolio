@@ -1,7 +1,7 @@
 import type { Sourced } from './types';
 
 // RESUME-EDUCATION. "May 2027" is printed without "expected" or "graduated";
-// do not label it either way without owner clarification.
+// the owner approved "Expected" separately (graduationStatus below).
 export const education = {
   sourceId: 'RESUME-EDUCATION',
   institution: 'Louisiana State University (LSU)',
@@ -11,6 +11,12 @@ export const education = {
   minor: 'Minor in Robotics Engineering',
   gpa: '3.842',
 } as const satisfies Sourced & Record<string, string>;
+
+// OWNER-2026-10-05, item 1. Never present the degree as completed.
+export const graduationStatus = {
+  sourceId: 'OWNER-2026-10-05',
+  label: 'Expected',
+} as const satisfies Sourced & { label: string };
 
 export const coursework = {
   sourceId: 'RESUME-COURSEWORK',

@@ -1,4 +1,4 @@
-/** Section IDs registered in docs/CONTENT.md. */
+/** Source IDs registered in docs/CONTENT.md. */
 export type SourceId =
   | 'RESUME-IDENTITY'
   | 'RESUME-EDUCATION'
@@ -9,7 +9,8 @@ export type SourceId =
   | 'RESUME-WANDERER'
   | 'RESUME-VIRTUAL-TWIN'
   | 'RESUME-LEADERSHIP'
-  | 'RESUME-SKILLS';
+  | 'RESUME-SKILLS'
+  | 'OWNER-2026-10-05';
 
 export interface Sourced {
   readonly sourceId: SourceId;

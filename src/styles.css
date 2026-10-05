@@ -1,22 +1,120 @@
-/* Neutral development shell; this is not the portfolio's visual direction. */
+/* Direction A, "Two Frames" (D006): drafting paper, ink, and two signal
+   colours shared with the hero diagram — virtual (Unity) and physical (robot). */
 :root {
-  font-family: system-ui, sans-serif;
-  color: #202020;
-  background: #fff;
-  line-height: 1.5;
+  --paper: #f3f2ec;
+  --ink: #17191c;
+  --muted: #565a61;
+  --rule: #d3d1c8;
+  --virtual: #2453c4;
+  --physical: #b03e1a;
+
+  --sans: 'Archivo Variable', system-ui, sans-serif;
+  --mono: 'IBM Plex Mono', ui-monospace, monospace;
+  --gutter: clamp(1rem, 4vw, 3rem);
+  --label-column: minmax(8rem, 2fr);
+  --content-column: minmax(0, 10fr);
+
+  color-scheme: light;
+  font: 400 1rem/1.55 var(--sans);
+  color: var(--ink);
+  background: var(--paper);
+  text-rendering: optimizeLegibility;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
+  background: var(--paper);
 }
 
-main {
-  max-width: 42rem;
-  margin-inline: auto;
-  padding: 2rem 1.25rem;
+a {
+  color: inherit;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
 }
 
-h1 {
-  line-height: 1.2;
-  overflow-wrap: anywhere;
+a:hover {
+  color: var(--virtual);
+}
+
+:focus-visible {
+  outline: 2px solid var(--virtual);
+  outline-offset: 3px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  line-height: 1.1;
+}
+
+ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.mono {
+  font-family: var(--mono);
+  font-size: 0.8125rem;
+  letter-spacing: 0.01em;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.skip-link {
+  position: absolute;
+  left: var(--gutter);
+  top: -3rem;
+  padding: 0.5rem 0.75rem;
+  background: var(--ink);
+  color: var(--paper);
+  z-index: 1;
+}
+
+.skip-link:focus {
+  top: 0.5rem;
+}
+
+/* Spec-sheet section: numbered sticky label beside the content column. */
+.sheet {
+  display: grid;
+  grid-template-columns: var(--label-column) var(--content-column);
+  gap: var(--gutter);
+  padding: 3rem var(--gutter);
+  border-bottom: 1px solid var(--rule);
+}
+
+.sheet > h2 {
+  font: 500 0.8125rem/1.4 var(--mono);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding-top: 0.35rem;
+  position: sticky;
+  top: 1rem;
+  align-self: start;
+}
+
+@media (max-width: 52rem) {
+  .sheet {
+    grid-template-columns: 1fr;
+  }
+
+  .sheet > h2 {
+    position: static;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }

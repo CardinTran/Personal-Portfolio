@@ -1,14 +1,20 @@
-import { identity } from './data/identity';
+import { Hero } from './components/Hero';
+import { SiteFooter } from './components/SiteFooter';
+import { ToolsSection } from './components/ToolsSection';
+import { WorkSection } from './components/work/WorkSection';
 
 export default function App() {
   return (
-    <main>
-      <h1>{identity.name}</h1>
-      <p>Portfolio development shell</p>
-      <p>
-        This temporary screen verifies the application setup. The portfolio's
-        design and content presentation have not been implemented.
-      </p>
-    </main>
+    <>
+      <a className="skip-link" href="#main">
+        Skip to work
+      </a>
+      <Hero />
+      <main id="main" tabIndex={-1}>
+        <WorkSection />
+        <ToolsSection />
+      </main>
+      <SiteFooter />
+    </>
   );
 }

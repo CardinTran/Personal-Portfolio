@@ -1,8 +1,8 @@
 # Personal Portfolio
 
-Development foundation for Cardin Tran's portfolio covering software engineering, AI, and robotics. The final portfolio has not been designed or built. The current screen is only a setup placeholder.
+Cardin Tran's portfolio covering software engineering, AI, and robotics. It implements the selected “Two Frames” direction (D006): a single page with an interactive coordinate-frame hero and reverse-chronological work. Project visuals and repository links are labelled placeholders until the owner supplies them.
 
-React, strict TypeScript, Vite, and plain CSS; npm for dependencies; ESLint and Prettier for code quality. The stack was selected because the initial repository contained only the resume.
+React, strict TypeScript, Vite, and plain CSS; npm for dependencies; ESLint, Prettier, and Vitest for code quality. The stack was selected because the initial repository contained only the resume.
 
 ## Develop
 
@@ -25,7 +25,8 @@ Run `npm run check` before a PR. `npm run build` produces `dist/`; `npm run prev
 ## Structure
 
 ```text
-src/                 application shell and styles
+src/                 application and global styles
+  components/        page sections and the hero diagram
   data/              approved runtime facts with provenance
 docs/                resume and persistent project context
 .github/             validation workflow and PR template
@@ -37,4 +38,4 @@ Personal claims must come from the resume or another explicitly owner-approved r
 
 Read `CLAUDE.md` and relevant docs, inspect the working tree, and use a scoped `feature/`, `fix/`, `refactor/`, `docs/`, or `chore/` branch. Validate and commit coherent units, push, and open a descriptive PR using the template when access permits. Normal development does not go directly on `main`. Review and merge separately.
 
-Recommended first Claude task: read the project context and resume, audit available content/assets, and propose three structurally different design directions with mobile strategies. Identify missing inputs and wait for direction selection before implementing the final layout.
+Remaining work: owner-supplied project visuals and repository links, hosting and deployment, social/SEO metadata, and an interactive keyboard and screen-reader pass.
